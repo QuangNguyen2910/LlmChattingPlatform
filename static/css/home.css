@@ -2,11 +2,54 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    height: 100vh;
+    background: linear-gradient(to bottom, #0a0a70, #000000); /* Dark blue to black gradient */
+    color: #fff; /* Text color */
+}
+
+.nav-container {
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0); /* Semi-transparent black background */
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-container {
+        width: 100%;
+        height: 16%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+.nav-container .info-container {
+    padding: 15px; 
+}
+
+.nav-container .social-container {
+    padding: 15px;
+}
+
+.nav-container .social-container a {
+    margin: 0 10px;
+    color: #fff; /* Text color */
+    text-decoration: none;
+}
+
+.content-container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: linear-gradient(to bottom, #060647, #000000); /* Dark blue to black gradient */
+    height: calc(100vh - 8%); /* Subtract nav container height */
+    background: linear-gradient(to bottom, #0a0a70, #000000); /* Dark blue to black gradient */
     color: #fff; /* Text color */
 }
 .chat-container {
@@ -47,26 +90,27 @@ body {
     flex: 1;
     padding: 8px;
     border-radius: 5px;
-    border: 1px solid #ccc;
-    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
-    color: #fff; /* Text color */
+    border: none;
+    background-color: rgb(255, 255, 255); /* Semi-transparent white background */
+    color: #000000; /* Text color */
 }
 .input-container button {
     padding: 8px 15px;
     margin-left: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     cursor: pointer;
 }
 .input-container button:hover {
-    background-color: #0056b3;
+    background-color: #ffffff;
 }
 
 /* Scrollbar */
 .chat-messages::-webkit-scrollbar {
     width: 10px; /* Width of the scrollbar */
+    background-color: transparent;
 }
 
 /* Scrollbar thumb */
