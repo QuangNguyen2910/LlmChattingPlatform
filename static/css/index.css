@@ -12,7 +12,7 @@ body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        height: 200vh;
+        height: 100vh;
         background: linear-gradient(to bottom, #0a0a70, #000000); /* Dark blue to black gradient */
         color: #fff; /* Text color */
     }
@@ -27,17 +27,6 @@ body {
     background-color: rgb(0, 0, 0); /* Semi-transparent black background */
 }
 
-@media screen and (max-width: 1024px) {
-    .nav-container {
-        width: 100%;
-        height: 8%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-    }
-}
 .nav-container .info-container {
     padding: 15px; 
 }
@@ -52,6 +41,26 @@ body {
     text-decoration: none;
 }
 
+@media screen and (max-width: 1024px) {
+    .nav-container {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .nav-container .info-container {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .nav-container .social-container {
+        padding: 10px;
+        font-size: 15px;
+    }
+}
+
 .content-container {
     width: 100%;
     height: calc(100% - 8%);
@@ -61,9 +70,19 @@ body {
     flex-direction: column;
 }
 
+@media screen and (max-width: 1024px) {
+    .content-container {
+        width: 100%;
+        height: calc(100% - 10%);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+}
 .title-container {
     width: 80%;
-    height: 20%;
+    height: 10%;
     font-size: 30px;
     display: flex;
     justify-content: center;
@@ -117,50 +136,6 @@ body {
     align-items: center;
 }
 
-@media screen and (max-width: 1024px) {
-    .description-container {
-        width: 100%;
-        height: 50%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .description-container .description {
-        width: 50%;
-        font-size: 15px;
-        text-align: center;
-    }
-    .description-container .input-image {
-        max-width: 25%;
-        height: 30%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .description-container .output-image {
-        max-width: 25%;
-        height: 30%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .link-container {
-        width: 75%;
-        height: 20%;
-        overflow: hidden;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: column;
-    }
-}
-
 .link-container input {
     width: 80%;
     height: 20%;
@@ -182,4 +157,59 @@ body {
     background-color: rgb(255, 255, 255); /* Semi-transparent black background */
     color: #000000; /* Text color */
     cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .title-container {
+        width: 80%;
+        height: 10%;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .description-container {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .description-container .description {
+        width: 70%;
+        font-size: 12px;
+        text-align: center;
+    }
+    .description-container .input-image {
+        max-width: 25%;
+        height: 35%;
+        display: flex;
+        font-size: 12px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .description-container .output-image {
+        max-width: 25%;
+        height: 35%;
+        display: flex;
+        font-size: 12px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .link-container {
+        width: 75%;
+        height: 20%;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
 }
