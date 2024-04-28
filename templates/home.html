@@ -4,17 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat Interface</title>
+    <link rel="icon" href="../static/images/chatbot.png">
     <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <script src="../static/js/home.js" defer></script>
 </head>
 <body>
-    <div class="chat-container">
-        <div class="chat-messages" id="chat-messages">
-            <!-- Chat messages will be appended here -->
+    <div class="nav-container">
+        <div class="info-container">
+            <span><i class="fa fa-phone" aria-hidden="true"></i> 0902119934</span> |
+            <span><i class="fa fa-envelope" aria-hidden="true"></i> nguyenquang71103@gmail.com</span>
         </div>
-        <div class="input-container">
-            <input type="text" id="message-input" placeholder="Type your message...">
-            <button onclick="sendMessage()">Send</button>
+        <div class="social-container">
+            <a href="https://www.facebook.com/quangcuoihihi/" target="_blank">
+                Facebook
+            </a> |
+            <a href="https://www.linkedin.com/in/quangnguyen711/" target="_blank">
+                LinkedIn
+            </a> |
+            <a href="../"><i class="fa fa-reply" aria-hidden="true"></i> Home</a> <!-- Add this line -->
+        </div>
+    </div>
+    <div class="content-container">
+        <div class="chat-container">
+            <div  id="chat-messages"    class="chat-messages">
+                <!-- Chat messages will be appended here -->
+            </div>
+            <div class="input-container">
+                <input type="text" id="message-input" placeholder="Type your message...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
         </div>
     </div>
 </body>
