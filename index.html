@@ -4,19 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat Interface</title>
+    <link rel="icon" href="static/images/chatbot.png">
     <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
 </head>
 <body>
-    <div class="title-container">
-        <h1>Chat Interface</h1>
+    <div class="nav-container">
+        <div class="info-container">
+            <span><i class="fa fa-phone" aria-hidden="true"></i> 0902119934</span> |
+            <span><i class="fa fa-envelope" aria-hidden="true"></i> nguyenquang71103@gmail.com</span>
+        </div>
+        <div class="social-container">
+            <a href="https://www.facebook.com/quangcuoihihi/" target="_blank">
+                Facebook
+            </a> |
+            <a href="https://www.linkedin.com/in/quangnguyen711/" target="_blank">
+                LinkedIn
+            </a>
+        </div>
     </div>
-    <div class="description-container">
-        <p>Hi! So you've seen my repo, as it name, this website is build for deploying llm models. So enjoy my work deploying your llm model!</p>
+    <div class="content-container">
+        <div class="title-container">
+            <h1>Chat Interface</h1>
+        </div>
+        <div class="description-container">
+            <div class="input-image">
+                <img src="static\images\input.png" alt="POST Json">
+                <p>Input Json</p>
+            </div>
+            <div class="description">
+                <p>Hi! So you've seen my repo, as it name, this website is build for deploying llm models. So enjoy my work deploying your llm model!</p>
+                <p>You can find the instruction for creating api link in my repo or just click in this <a href="https://github.com/QuangNguyen2910/LlmChattingPlatform" target="_blank">link</a></p>
+            </div>
+            <div class="output-image">
+                <img src="static\images\output.png" alt="Result Json">
+                <p>Output Json</p>
+            </div>
+        </div>
+        <form class="link-container" id="link-container">
+            <input type="text" id="link-input" placeholder="Type your api link...">
+            <button type="submit">Submit link</button>
+        </form>
+        <script src="static/js/index.js"></script>        
     </div>
-    <form class="link-container" id="link-container">
-        <input type="text" id="link-input" placeholder="Type your api link...">
-        <button type="submit">Submit link</button>
-    </form>
-    <script src="static/js/index.js"></script>
 </body>
 </html>
